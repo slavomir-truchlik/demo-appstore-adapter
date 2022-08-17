@@ -1,14 +1,53 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E946786A-775E-40A5-AD1C-7AE52A842B48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A818765B-79C0-4D38-8259-420B3BF8FD7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.Web", "src\ST.GitHub.DemoAppStoreAdapter.Web\ST.GitHub.DemoAppStoreAdapter.Web.csproj", "{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.AppStore", "src\ST.GitHub.DemoAppStoreAdapter.AppStore\ST.GitHub.DemoAppStoreAdapter.AppStore.csproj", "{E7135F66-7B45-4EE0-B88C-758C5363C2A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration", "test\ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration\ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration.csproj", "{01009072-4870-49BE-BDD6-8E0A249295DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit", "test\ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit\ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit.csproj", "{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7135F66-7B45-4EE0-B88C-758C5363C2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7135F66-7B45-4EE0-B88C-758C5363C2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7135F66-7B45-4EE0-B88C-758C5363C2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7135F66-7B45-4EE0-B88C-758C5363C2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01009072-4870-49BE-BDD6-8E0A249295DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01009072-4870-49BE-BDD6-8E0A249295DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01009072-4870-49BE-BDD6-8E0A249295DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01009072-4870-49BE-BDD6-8E0A249295DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F4B4183-E487-45CE-8372-CD6B4B14BA3E} = {E946786A-775E-40A5-AD1C-7AE52A842B48}
+		{E7135F66-7B45-4EE0-B88C-758C5363C2A3} = {E946786A-775E-40A5-AD1C-7AE52A842B48}
+		{01009072-4870-49BE-BDD6-8E0A249295DE} = {A818765B-79C0-4D38-8259-420B3BF8FD7A}
+		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E} = {A818765B-79C0-4D38-8259-420B3BF8FD7A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {996C12C9-3FC7-47BE-9041-C0F952E75B3F}
 	EndGlobalSection
 EndGlobal
