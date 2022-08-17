@@ -1,15 +1,25 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
-
-var app = builder.Build();
+ConfigureServices(builder.Services);
 
 // Configure the HTTP request pipeline.
-
-app.UseAuthorization();
-
-app.MapControllers();
+var app = builder.Build();
+Configure(app);
 
 app.Run();
+
+static void ConfigureServices(IServiceCollection services) 
+{
+    services.AddControllers();
+    services.AddHealthChecks();
+}
+
+static void Configure(WebApplication app) 
+{
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    app.MapHealthChecks("/healthcheck");
+}
