@@ -1,6 +1,4 @@
-﻿
-using ST.GitHub.DemoAppStoreAdapter.Common;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit.SignedTransactionMocks
 {
@@ -40,8 +38,8 @@ namespace ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit.SignedTransactionMoc
         private Task<string> BuildSignedTransactionAsync(NotificationType type, NotificationSubtype? subtype, string signedTransactionInfo, string signedRenewalInfo)
             => new SignedPayload(type, subtype, Guid.NewGuid().ToString(), BuildNotificationData(signedTransactionInfo, signedRenewalInfo), "2.0", DateTimeOffset.UtcNow.ToUnixTimeSeconds())
             .Map(_signedTransactionBuilder.SignAsJwsAsync)
-            .MapAsync(_ => new AppStoreNotificationRaw(_))
-            .MapAsync(_ => JsonSerializer.Serialize(_));
+            .MapAsync(_ => new AppStoreNotificationRaw(_).AsTask())
+            .MapAsync(_ => JsonSerializer.Serialize(_).AsTask());
 
         private static NotificationDataRaw BuildNotificationData(string signedTransactionInfo, string signedRenewalInfo)
             => new(null, "github.truchlik.slavomir.test", "0.0.1", "localhost", signedTransactionInfo, signedRenewalInfo);

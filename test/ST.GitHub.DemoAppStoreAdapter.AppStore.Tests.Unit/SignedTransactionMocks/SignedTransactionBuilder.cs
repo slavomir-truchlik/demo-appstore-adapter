@@ -66,10 +66,10 @@ namespace ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit.SignedTransactionMoc
 
         private static Task<string> GetCertificatePemAsync(string path)
             => File.ReadAllBytesAsync(path)
-                .MapAsync(_ => PemEncoding.Write("CERTIFICATE", _))
-                .MapAsync(_ => new string(_))
-                .MapAsync(_ => _.Split('-', StringSplitOptions.RemoveEmptyEntries)[1])
-                .MapAsync(_ => _.Replace("\n", string.Empty));
+                .MapAsync(_ => PemEncoding.Write("CERTIFICATE", _).AsTask())
+                .MapAsync(_ => new string(_).AsTask())
+                .MapAsync(_ => _.Split('-', StringSplitOptions.RemoveEmptyEntries)[1].AsTask())
+                .MapAsync(_ => _.Replace("\n", string.Empty).AsTask());
 
         private static async Task<string> CalculateSignatureAsync(string signingKeyPath, string @string)
         {
