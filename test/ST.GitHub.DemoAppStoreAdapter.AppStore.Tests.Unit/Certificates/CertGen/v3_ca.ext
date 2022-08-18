@@ -1,0 +1,4 @@
+authorityKeyIdentifier=keyid
+basicConstraints=critical,CA:true
+subjectKeyIdentifier=hash
+keyUsage=critical,Certificate Sign, CRL Sign

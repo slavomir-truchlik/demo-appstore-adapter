@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E946786A-775
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A818765B-79C0-4D38-8259-420B3BF8FD7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.Web", "src\ST.GitHub.DemoAppStoreAdapter.Web\ST.GitHub.DemoAppStoreAdapter.Web.csproj", "{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ST.GitHub.DemoAppStoreAdapter.Web", "src\ST.GitHub.DemoAppStoreAdapter.Web\ST.GitHub.DemoAppStoreAdapter.Web.csproj", "{0F4B4183-E487-45CE-8372-CD6B4B14BA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.AppStore", "src\ST.GitHub.DemoAppStoreAdapter.AppStore\ST.GitHub.DemoAppStoreAdapter.AppStore.csproj", "{E7135F66-7B45-4EE0-B88C-758C5363C2A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ST.GitHub.DemoAppStoreAdapter.AppStore", "src\ST.GitHub.DemoAppStoreAdapter.AppStore\ST.GitHub.DemoAppStoreAdapter.AppStore.csproj", "{E7135F66-7B45-4EE0-B88C-758C5363C2A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration", "test\ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration\ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration.csproj", "{01009072-4870-49BE-BDD6-8E0A249295DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration", "test\ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration\ST.GitHub.DemoAppStoreAdapter.Web.Tests.Integration.csproj", "{01009072-4870-49BE-BDD6-8E0A249295DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit", "test\ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit\ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit.csproj", "{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit", "test\ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit\ST.GitHub.DemoAppStoreAdapter.AppStore.Tests.Unit.csproj", "{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.GitHub.DemoAppStoreAdapter.Common", "src\ST.GitHub.DemoAppStoreAdapter.Common\ST.GitHub.DemoAppStoreAdapter.Common.csproj", "{B1F89C90-44F8-4033-B21E-605B590BBBE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F89C90-44F8-4033-B21E-605B590BBBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F89C90-44F8-4033-B21E-605B590BBBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F89C90-44F8-4033-B21E-605B590BBBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F89C90-44F8-4033-B21E-605B590BBBE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{E7135F66-7B45-4EE0-B88C-758C5363C2A3} = {E946786A-775E-40A5-AD1C-7AE52A842B48}
 		{01009072-4870-49BE-BDD6-8E0A249295DE} = {A818765B-79C0-4D38-8259-420B3BF8FD7A}
 		{A1BEC3EF-5F73-458E-810B-F1F5AD7E701E} = {A818765B-79C0-4D38-8259-420B3BF8FD7A}
+		{B1F89C90-44F8-4033-B21E-605B590BBBE1} = {E946786A-775E-40A5-AD1C-7AE52A842B48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {996C12C9-3FC7-47BE-9041-C0F952E75B3F}
