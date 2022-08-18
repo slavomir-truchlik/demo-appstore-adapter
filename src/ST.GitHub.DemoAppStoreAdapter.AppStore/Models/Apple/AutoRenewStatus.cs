@@ -1,6 +1,8 @@
 ﻿namespace ST.GitHub.DemoAppStoreAdapter.AppStore.Models.Apple
 {
-    public record Notification
+    public enum AutoRenewStatus
     {
+        Off = 0,
+        On = 1
     }
 }

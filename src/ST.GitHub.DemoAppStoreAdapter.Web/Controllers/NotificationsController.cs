@@ -11,10 +11,9 @@ namespace ST.GitHub.DemoAppStoreAdapter.Web.Controllers
         {
         }
 
-
         [HttpPost]
         [Route("receive")]
-        public async Task<IActionResult> ReceiveNotificationAsync(Notification notification)
+        public async Task<IActionResult> ReceiveNotificationAsync(AppStoreNotificationRaw notification)
             => Ok("Received!");
     }
 }

@@ -16,4 +16,24 @@
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ST.GitHub.DemoAppStoreAdapter.AppStore\ST.GitHub.DemoAppStoreAdapter.AppStore.csproj" />
+    <ProjectReference Include="..\..\src\ST.GitHub.DemoAppStoreAdapter.Common\ST.GitHub.DemoAppStoreAdapter.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Certificates\certificate_intermediate.cer">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Certificates\certificate_root.cer">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Certificates\certificate_signing.cer">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Certificates\signing.key">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
