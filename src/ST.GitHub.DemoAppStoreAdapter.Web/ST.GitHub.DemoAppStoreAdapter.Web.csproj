@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -10,4 +10,8 @@
     <ProjectReference Include="..\ST.GitHub.DemoAppStoreAdapter.AppStore\ST.GitHub.DemoAppStoreAdapter.AppStore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="$(AssemblyName).Tests.Integration" />
+  </ItemGroup>
+	
 </Project>
