@@ -1,25 +1,34 @@
+using Microsoft.AspNetCore.HttpLogging;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-ConfigureServices(builder.Services);
+RegisterServices(builder);
 
-// Configure the HTTP request pipeline.
-var app = builder.Build();
-Configure(app);
+ConfigurePipeline(builder);
 
-app.Run();
-
-static void ConfigureServices(IServiceCollection services) 
+static void RegisterServices(WebApplicationBuilder builder)
 {
-    services.AddControllers();
+    var services = builder.Services;
+
+    services.AddHttpLogging(httpLogging =>
+    {
+        httpLogging.LoggingFields = HttpLoggingFields.All;
+    });
+
     services.AddHealthChecks();
+
+    services.AddControllers();
 }
 
-static void Configure(WebApplication app) 
+static void ConfigurePipeline(WebApplicationBuilder builder)
 {
-    app.UseAuthorization();
+    var app = builder.Build();
+
+    app.UseHttpLogging();
+
+    app.MapHealthChecks("/healthcheck");
 
     app.MapControllers();
 
-    app.MapHealthChecks("/healthcheck");
+    app.Run();
 }
